@@ -1,0 +1,403 @@
+@font-face {
+  font-family: sign;
+  src: url(/Asem\ Kandis\ PERSONAL\ USE.otf);
+  /* src: url(creattion-demo/Creattion\ Demo.otf); */
+}
+
+
+
+@font-face {
+  font-family: product-regular;
+  src: url(/Product\ Sans\ Regular.ttf)
+}
+
+@font-face {
+  font-family: product-bold;
+  src: url(/Product\ Sans\ Bold.ttf)
+}
+
+
+@font-face {
+  font-family: sign2;
+  src: url(Creattion\ Demo.otf)
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: product-regular;
+  text-transform: capitalize;
+}
+
+
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+
+body {
+  background-color: #eee;
+  color: #333;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+
+
+#main {
+  width: 100%;
+  max-width: 1728px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  /* background-color: red; */
+}
+
+
+#nav {
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+  position: relative;
+}
+
+#nav>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-nav,
+.right-nav {
+  width: 25vw;
+  height: 100%;
+}
+
+
+
+.left-nav>a {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: sign;
+  rotate: -15deg;
+  position: relative;
+}
+
+.left-nav>a::before {
+  content: 'RaeEs';
+  position: absolute;
+  top: -30%;
+  left: 0;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+.center-nav {
+  width: 50vw;
+  height: 100%;
+  gap: 3vw;
+}
+
+
+
+
+.right-nav>div.btn {
+  border: 2px solid;
+  font-size: 1.1rem;
+  font-family: product-bold;
+  padding: 3% 5%;
+  border-radius: 100px;
+}
+
+
+hr {
+  margin: auto;
+  width: 85%;
+  background-color: #33333333;
+}
+
+
+
+
+#content {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 10%;
+}
+
+
+
+#content>h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #000;
+  line-height: 80%;
+  margin-top: 5%;
+}
+
+#content>h1>span {
+  font-size: 4rem;
+}
+
+
+
+.slider {
+  width: 100%;
+  height: 70vh;
+  /* background-color: rgb(145, 133, 110); */
+  margin-top: -6%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid; */
+}
+
+
+
+
+
+.swiper {
+
+  /* border: 2px solid ; */
+  width: 300px;
+  /* height: 100%; */
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+
+  /* border-radius: 20px; */
+  padding: 4%;
+  border: 1px solid;
+  box-shadow: 5px 0px 10px #33333333;
+
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.swiper-slide .img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  /* border-radius: 12px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.swiper-slide:nth-of-type(1) .img {
+  background-image: url(https://i.pinimg.com/564x/e7/91/bf/e791bfe404296bcbce99f5211b5f79e8.jpg);
+  background-position: center;
+}
+
+.swiper-slide:nth-of-type(2) .img {
+  background-image: url(https://i.pinimg.com/564x/66/df/89/66df89867444fa278abd3678df57784f.jpg);
+  background-position: center;
+}
+
+.swiper-slide:nth-of-type(3) .img {
+  background-image: url(https://i.pinimg.com/564x/40/74/ec/4074ec5d93ade0bc3e22fd7c48ec3e9d.jpg);
+  background-position: center;
+}
+
+.swiper-slide:nth-of-type(4) .img {
+  background-image: url(https://i.pinimg.com/564x/69/4e/fd/694efdf6fa3671207b7f96ead33d09d3.jpg);
+  background-position: center;
+}
+
+.swiper-slide:nth-of-type(5) .img {
+  background-image: url(https://i.pinimg.com/564x/c9/9a/d4/c99ad4132bbcc7728950773cfac57b85.jpg);
+  background-position: center;
+}
+
+/* .swiper-slide:nth-of-type(6) .img{
+  background-image: url(https://i.pinimg.com/564x/9c/13/08/9c1308aaba9c2271ff37d06fbeb6bc36.jpg);
+  background-position: center;
+} */
+.swiper-slide:nth-of-type(6) .img {
+  background-image: url(https://i.pinimg.com/564x/00/3a/b4/003ab484e5d6ca0973202b6366879a77.jpg);
+  background-position: center;
+}
+
+.swiper-slide:nth-of-type(7) .img {
+  background-image: url(https://i.pinimg.com/736x/96/7d/db/967ddb22e93525ec74f2dfbbe393f23a.jpg);
+  background-position: center;
+}
+
+.swiper-slide:nth-of-type(8) .img {
+  background-image: url(https://i.pinimg.com/564x/6f/f2/4d/6ff24d63a1a310fb7283e0278101b3a7.jpg);
+  background-position: center;
+}
+
+.swiper-slide:nth-of-type(9) .img {
+  background-image: url(https://i.pinimg.com/564x/73/1f/95/731f959c34250152d403aaed1e48084c.jpg);
+  background-position: center;
+}
+
+
+
+
+
+.swiper-slide>h2 {
+  font-size: 3rem;
+  font-family: sign;
+  font-weight: 400;
+  text-align: center;
+  rotate: -10deg;
+  color: #000;
+}
+
+
+
+
+
+
+.custom {
+  padding: 1% 5%;
+  color: #333;
+  position: absolute;
+
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.p-btn {
+  top: 50%;
+  left: 10%;
+  translate: 0% -50%;
+  z-index: 1111;
+}
+
+.n-btn {
+  top: 50%;
+  right: 10%;
+  translate: 0% -50%;
+  z-index: 1111;
+}
+
+.custom>span {
+  display: inline-block;
+  height: 2px;
+  width: 20%;
+  background-color: #333;
+  position: absolute;
+}
+
+.p-btn>span {
+  left: 10%;
+}
+
+.n-btn>span {
+  right: 10%;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1100px) {
+  .custom {
+    display: none;
+  }
+
+}
+
+
+
+@media screen and (max-width: 850px) {
+  #content>h1{
+    font-size: 4rem;
+  }
+
+  #content>h1>span{
+    font-size: 3rem;
+  }
+
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+  .center-nav,.right-nav{
+    display: none;
+    background-color: red;
+    width: 0;
+  }
+  .center-nav > a,.right-nav>div{
+    display: none;
+  }
+
+  .left-nav{
+    width: 100vw;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+
+  #content>h1{
+    padding: 0 2%;
+    font-size: 3rem;
+  }
+
+  #content>h1>span{
+    font-size: 2.5rem;
+  }
+
+  .slider{
+    width: 100%;
+  }
+  #content{
+    padding: 5% 0;
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+  .slider{
+    scale: 0.9;
+    width: 110%;
+  }
+}
